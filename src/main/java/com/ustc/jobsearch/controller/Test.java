@@ -19,7 +19,7 @@ public class Test {
     @Autowired
     private TestService testService;
 
-    @ApiOperation("音乐查询api(基于歌曲名或歌手名的模糊检索功能)返回一个歌曲id列表")
+    @ApiOperation("测试查询api")
     @RequestMapping(path = "/query",produces = "application/json",method = RequestMethod.GET)
     @ResponseBody
     public Job fuzzyQuery(@RequestParam("jobName") String jobName){
